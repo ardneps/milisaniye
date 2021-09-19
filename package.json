@@ -1,0 +1,31 @@
+{
+  "name": "milisaniye",
+  "version": "1.0.0",
+  "description": "Zaman bildiren yazılı ifadeleri milisaniyeye çevirin!",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ardneps",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardneps/milisaniye.git"
+  },
+  "keywords": [
+    "ms",
+    "millisecond",
+    "milisecond",
+    "milli",
+    "mili",
+    "second",
+    "parse",
+    "time",
+    "string",
+    "milisaniye"
+  ],
+  "bugs": {
+    "url": "https://github.com/ardneps/milisaniye/issues"
+  },
+  "homepage": "https://github.com/ardneps/milisaniye#readme"
+}
