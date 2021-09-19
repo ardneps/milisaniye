@@ -1,1 +1,0 @@
-export { ms as default, ms } from "./src/ms";
