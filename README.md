@@ -5,7 +5,7 @@ Zaman bildiren çeşitli yazılı ifadeleri milisaniyeye çevirmek için bu pake
 ## Örnekler
 
 ```js
-ms("2 days") // 172800000
+ms("2 gün") // 172800000
 ms("1d") // 86400000
 ms("10h") // 36000000
 ms("2.5 hrs") // 9000000
