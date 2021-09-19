@@ -1,1 +1,1 @@
-export { ms as default, ms } from "./src";
+export { ms as default, ms } from "./src/ms";
