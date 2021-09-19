@@ -5,6 +5,8 @@ Zaman bildiren çeşitli yazılı ifadeleri milisaniyeye çevirmek için bu pake
 ## Örnekler
 
 ```js
+import ms from "milisaniye" // import { ms } from "milisaniye" şeklinde de import edilebilir
+
 ms("2 gün") // 172800000
 ms("1d") // 86400000
 ms("10h") // 36000000
