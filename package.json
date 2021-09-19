@@ -1,8 +1,9 @@
 {
   "name": "milisaniye",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zaman bildiren yazılı ifadeleri milisaniyeye çevirin!",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "types": "lib",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
