@@ -1,4 +1,4 @@
-import { convert } from "./convert";
+import { convert } from "../util/convert";
 
 declare type Unit = "Years" | "Year" | "Yrs" | "Yr" | "Y" | "Yıl" | "Weeks" | "Week" | "W" | "Hafta" | "Days" | "Day" | "D" | "Gün" | "Hours" | "Hour" | "Hrs" | "Hr" | "H" | "Saat" | "Minutes" | "Minute" | "Mins" | "Min" | "M" | "Dakika" | "Dk" | "Seconds" | "Second" | "Secs" | "Sec" | "s" | "Saniye" | "Sn" | "Milliseconds" | "Millisecond" | "Msecs" | "Msec" | "Ms";
 declare type UnitAnyCase = Unit | Uppercase<Unit> | Lowercase<Unit>;
@@ -24,10 +24,10 @@ const s = 1000, m = s * 60, h = m * 60, d = h * 24, w = d * 7, y = d * 365.25;
 export const ms = (value: StringValue, options?: Options): number | undefined => {
 
     if (!value) return;
-    if (value.length > 1000) return;
+    if (value.length > 1000) return;7
 
-    const match = /^(-?(?:\d+)?\.?\d+) *(milisaniye?|msec?|msecs?|millisecond?|milliseconds?|ms?|sec?|secs?|seconds?|second?|saniye?|sn?|s?|minutes?|minute?|mins?|min?|dakika?|dk?|m?|hours?|hour?|hrs?|hr?|h?|saat?|days?|day?|gün?|d?|weeks?|week?|hafta?|w?|years?|year?|yrs?|yr?|yıl?|y)?$/i.exec(value.toLocaleUpperCase("tr").toLocaleLowerCase("tr")) ??
-        /^(-?(?:\d+)?\.?\d+) *(milisaniye?|msec?|msecs?|millisecond?|milliseconds?|ms?|sec?|secs?|seconds?|second?|saniye?|sn?|s?|minutes?|minute?|mins?|min?|dakika?|dk?|m?|hours?|hour?|hrs?|hr?|h?|saat?|days?|day?|gün?|d?|weeks?|week?|hafta?|w?|years?|year?|yrs?|yr?|yıl?|y)?$/i.exec(value.toLocaleUpperCase("en-US").toLocaleLowerCase("en-US"));
+    const match = /^(-?(?:\d+)?\.?\d+) *(milisaniye?|msec?|msecs?|millisecond?|milliseconds?|ms?|sec?|secs?|seconds?|second?|saniye?|sn?|s?|minutes?|minute?|mins?|min?|dakika?|dk?|m?|hours?|hour?|hrs?|hr?|h?|saat?|days?|day?|gün?|d?|weeks?|week?|hafta?|w?|years?|year?|yrs?|yr?|yıl?|y)?$/i.exec(String(value).toLocaleUpperCase("tr").toLocaleLowerCase("tr")) ??
+        /^(-?(?:\d+)?\.?\d+) *(milisaniye?|msec?|msecs?|millisecond?|milliseconds?|ms?|sec?|secs?|seconds?|second?|saniye?|sn?|s?|minutes?|minute?|mins?|min?|dakika?|dk?|m?|hours?|hour?|hrs?|hr?|h?|saat?|days?|day?|gün?|d?|weeks?|week?|hafta?|w?|years?|year?|yrs?|yr?|yıl?|y)?$/i.exec(String(value).toLocaleUpperCase("en-US").toLocaleLowerCase("en-US"));
 
     if (!match) return;
 

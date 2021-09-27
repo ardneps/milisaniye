@@ -1,6 +1,6 @@
 {
   "name": "milisaniye",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Zaman bildiren yazılı ifadeleri milisaniyeye çevirin!",
   "main": "index.js",
   "types": "index.ts",
